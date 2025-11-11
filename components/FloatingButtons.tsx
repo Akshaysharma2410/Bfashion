@@ -12,11 +12,11 @@ const PhoneIcon = () => (
     </svg>
 );
 
-const ChatIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-    </svg>
-);
+// const ChatIcon = () => (
+//     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+//         <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+//     </svg>
+// );
 
 
 const FloatingButtons: React.FC = () => {
@@ -24,20 +24,20 @@ const FloatingButtons: React.FC = () => {
         <>
             {/* Side buttons */}
             <div className="fixed right-0 top-1/2 -translate-y-1/2 z-40 flex flex-col">
-                <a href="#" aria-label="Chat on WhatsApp" className="bg-green-500 p-4 shadow-lg hover:bg-green-600 transition-colors rounded-l-lg">
+                <a href="https://api.whatsapp.com/send?phone=918427123322" aria-label="Chat on WhatsApp" className="bg-green-500 p-4 shadow-lg hover:bg-green-600 transition-colors rounded-l-lg">
                     <WhatsAppIcon />
                 </a>
-                <a href="#" aria-label="Call us" className="bg-brand-gold p-4 shadow-lg hover:bg-brand-gold/90 transition-colors mt-1 rounded-l-lg">
+                <a href="tel:+91 8427123322" aria-label="Call us" className="bg-brand-gold p-4 shadow-lg hover:bg-brand-gold/90 transition-colors mt-1 rounded-l-lg">
                     <PhoneIcon />
                 </a>
             </div>
 
             {/* Bottom right chat button */}
-            <div className="fixed bottom-6 right-6 z-40">
+            {/* <div className="fixed bottom-6 right-6 z-40">
                 <button aria-label="Open chat" className="bg-brand-charcoal p-4 rounded-full shadow-lg hover:bg-brand-charcoal/80 transition-colors group">
                     <ChatIcon />
                 </button>
-            </div>
+            </div> */}
         </>
     );
 };
